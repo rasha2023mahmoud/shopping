@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "title": "15 products",
+        "src" : "./images/cat-1.jpg",
+        "details": "Men’s dresses"
+    },
+    {
+        "id": 2,
+        "title": "15 products",
+        "src" : "./images/cat-2.jpg",
+        "details": "Women's dresses"
+    },
+    {
+        "id": 3,
+        "title": "15 products",
+        "src" : "./images/cat-3.jpg",
+        "details": "Baby's dresses"
+    },
+     {
+        "id": 4,
+        "title": "15 products",
+        "src" : "./images/cat-4.jpg",
+        "details": "Accerssories"
+    },
+     {
+        "id": 5,
+        "title": "15 products",
+        "src" : "./images/cat-5.jpg",
+        "details": "Bags"
+    },
+     {
+        "id": 6,
+        "title": "15 products",
+        "src" : "./images/cat-6.jpg",
+        "details": "Shoes"
+    }
+]
