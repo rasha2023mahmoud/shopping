@@ -12,13 +12,20 @@ export default function Cataloge() {
 
   return (
     <>
-      {cataList.map((item) => (
-        <div className="cata-box" key={item.id}>
-          <h4 className="title-box">{item.title}</h4>
-          <img className="img-box" src={item.src} title={item.title} />
-          <p className="data-box">{item.details}</p>
-        </div>
-      ))}
+      <div className="main-card">
+        {cataList.map((item) => (
+          <div key={item.id}>
+            <div className="cata-box">
+              <h4 className="title-box">{item.title}</h4>
+              <div className="inside">
+                {" "}
+                <img className="img-box" src={item.src} title={item.title} />
+              </div>
+              <p className="data-box">{item.details}</p>
+            </div>
+          </div>
+        ))}
+      </div>
     </>
   );
 }

@@ -489,12 +489,57 @@ ul .pages{
   font-weight: bold;
 }
 
-.cata-box{
+.main-card{
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 15px
+  gap: 8px;
+  padding: 5px;
+  margin: 0 auto;
+  justify-content: center;
 }
+
+.cata-box{
+   flex: 0 0 calc(33.33% - 10px);
+   align-items: center;
+    border: 2px solid var(--ring);
+    border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px; 
+  width: 450px
+}
+
+.img-box{
+    height: 400px;
+    transition: 0.3s all;
+}
+
+.inside{
+  overflow: hidden
+}
+.inside .img-box{
+transition: transform 0.3s ease;
+}
+ .inside .img-box:hover{
+  transform: scale(2, 2) 
+}
+
+.title-box, .data-box{
+  font-weight: bold;
+  padding: 3px;
+  margin: 3px
+}
+
+.title-box{
+  text-align:right;
+}
+
+.data-box{
+  text-align: left
+}
+
 .dark {
   --sidebar: hsl(240 5.9% 10%);
   --sidebar-foreground: hsl(240 4.8% 95.9%);
