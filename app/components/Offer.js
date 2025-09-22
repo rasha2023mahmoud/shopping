@@ -12,11 +12,18 @@ export default function Offer() {
             height={300}
             className="offer-img"
           />
-          <p>20% off the all order</p>
-          <h2>20% off the all order</h2>
-          <button>Shop Now</button>
+          <div className="offer-content">
+            <p>20% off the all order</p>
+            <h2>Spring Collection</h2>
+            <button>Shop Now</button>
+          </div>
         </div>
-        <div>
+        <div className="offer-card">
+          <div className="offer-content">
+            <p className="offer-text">20% off the all order</p>
+            <h2 className="offer-title">Winter Collection</h2>
+            <button className="offer-btn">Shop Now</button>
+          </div>
           <Image
             src="/images/offer-2.png"
             alt="offer-two"
@@ -24,9 +31,6 @@ export default function Offer() {
             height={300}
             className="offer-img"
           />
-          <p className="offer-text">20% off the all order</p>
-          <h2 className="offer-title">20% off the all order</h2>
-          <button className="offer-btn">Shop Now</button>
         </div>
       </div>
     </>
