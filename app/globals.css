@@ -618,7 +618,39 @@ transition: transform 0.3s ease;
   }
 }
 
+.section-title{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
 
+.section-title::after,
+.section-title::before{
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 5px;
+  background-color: black;
+}
+
+.section-title::after{
+  top: 26px;
+  right: 60%;
+}
+
+.section-title::before{
+  top: 26px;
+  left: 60%;
+}
+
+@media (max-width: 1349px){
+  .section-title::after,
+.section-title::before{
+  display: none
+}
+}
 
 
 
