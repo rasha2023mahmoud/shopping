@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "src": "./images/product-1.jpg",
+        "title" : "Colorful Stylish Shirt",
+        "salary": "$123.00",
+        "mainSalary": "$123.00"
+
+    },
+    {
+        "id": 2,
+        "src": "./images/product-2.jpg",
+        "title" : "Colorful Stylish Shirt",
+        "salary": "$123.00",
+        "mainSalary": "$123.00"
+
+    },
+    {
+        "id": 3,
+        "src": "./images/product-3.jpg",
+        "title" : "Colorful Stylish Shirt",
+        "salary": "$123.00",
+        "mainSalary": "$123.00"
+
+    },
+    {
+        "id": 4,
+        "src": "./images/product-4.jpg",
+        "title" : "Colorful Stylish Shirt",
+        "salary": "$123.00",
+        "mainSalary": "$123.00"
+
+    },
+    {
+        "id": 5,
+        "src": "./images/product-5.jpg",
+        "title" : "Colorful Stylish Shirt",
+        "salary": "$123.00",
+        "mainSalary": "$123.00"
+
+    },
+    {
+        "id": 6,
+        "src": "./images/product-6.jpg",
+        "title" : "Colorful Stylish Shirt",
+        "salary": "$123.00",
+        "mainSalary": "$123.00"
+
+    },
+    {
+        "id": 7,
+        "src": "./images/product-7.jpg",
+        "title" : "Colorful Stylish Shirt",
+        "salary": "$123.00",
+        "mainSalary": "$123.00"
+
+    },
+    {
+        "id": 8,
+        "src": "./images/product-8.jpg",
+        "title" : "Colorful Stylish Shirt",
+        "salary": "$123.00",
+        "mainSalary": "$123.00"
+
+    }
+] 
