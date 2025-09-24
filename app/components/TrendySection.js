@@ -5,7 +5,7 @@ export default function TrendySection() {
   const [trendy, setTrendy] = useState([]);
   useEffect(() => {
     async function fetchTrendy() {
-      const response = await fetch("/trendy.json");
+      const response = await fetch("/Trend.json");
       const data = await response.json();
       setTrendy(data);
     }
