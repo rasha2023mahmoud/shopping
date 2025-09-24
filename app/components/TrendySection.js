@@ -1,4 +1,5 @@
 "use client";
+//محتاجة كتابة
 import { useState, useEffect } from "react";
 export default function TrendySection() {
   const [trendy, setTrendy] = useState([]);
