@@ -16,10 +16,10 @@ export default function TrendySection() {
 
   return (
     <>
-      {trendy.map((item, index) => {
-        return (
-          <div className="trendy-container" key={item.id}>
-            <div className="trendy-card">
+      <div className="trendy-container">
+        {trendy.map((item, index) => {
+          return (
+            <div className="trendy-card" key={item.id}>
               <img
                 className="trendy-img"
                 src={item.src}
@@ -29,24 +29,24 @@ export default function TrendySection() {
               <p className="trendy-title">{item.title}</p>
               <span className="salary">{item.salary}</span>
               <span className="main-salary">{item.mainSalary}</span>
-            </div>
-            <div className="icons-list">
-              <div className="first-icons">
-                <span>
-                  <FaEye />
-                </span>
-                <span>view details</span>
+              <div className="icons-list">
+                <div className="first-icons">
+                  <span>
+                    <FaEye />
+                  </span>
+                  <span>view details</span>
+                </div>
+                <div className="second-icons">
+                  <span>
+                    <FaShoppingCart />
+                  </span>
+                  <span>add to cart</span>
+                </div>
               </div>
-              <div className="second-icons">
-                <span>
-                  <FaShoppingCart />
-                </span>
-                <span>add to cart</span>
-              </div>
             </div>
-          </div>
-        );
-      })}
+          );
+        })}
+      </div>
     </>
   );
 }
