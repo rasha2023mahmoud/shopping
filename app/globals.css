@@ -652,6 +652,30 @@ transition: transform 0.3s ease;
 }
 }
 
+/* trendy section */
+.trendy-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  align-items: center;
+  margin: 5px;
+  padding: 5px;  
+}
+
+.trendy-card{
+   flex: 1 1  calc(25% - 10px);
+  text-align: center;
+  gap: 5px;
+  align-items: center;
+  border: 2px solid var(--ring);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px; 
+  height: 200px;
+  width: 150px
+}
 
 
 .dark {
