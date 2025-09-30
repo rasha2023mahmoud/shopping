@@ -745,6 +745,40 @@ transition: transform 0.3s ease;
   padding: 3px
 }
 
+/* update section */
+.update-container{
+margin-top: 100px;
+background-color: #EDF1FF;
+}
+.update-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text-section{
+  width: 400px;
+  text-align: center;
+  font-weight: bold
+}
+
+.input-section{
+  width: 70%
+}
+.input-button{
+  background-color: #D19C97 !important;
+  color: var(oklch(0.21 0.006 285.885)) !important;
+  cursor: pointer;
+  transition: 0.1s all;
+}
+
+.input-button:hover{
+  color:oklch(0.985 0 0) !important
+}
+
+
+
 
 .dark {
   --sidebar: hsl(240 5.9% 10%);
