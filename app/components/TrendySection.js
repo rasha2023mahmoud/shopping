@@ -20,27 +20,33 @@ export default function TrendySection() {
         {trendy.map((item, index) => {
           return (
             <div className="trendy-card" key={item.id}>
-              <img
-                className="trendy-img"
-                src={item.src}
-                alt={item.title}
-                title={item.title}
-              />
-              <p className="trendy-title">{item.title}</p>
-              <span className="salary">{item.salary}</span>
-              <span className="main-salary">{item.mainSalary}</span>
-              <div className="icons-list">
-                <div className="first-icons">
-                  <span>
-                    <FaEye />
-                  </span>
-                  <span>view details</span>
+              <div className="upper-content">
+                <div className="image">
+                  <img
+                    className="trendy-img"
+                    src={item.src}
+                    alt={item.title}
+                    title={item.title}
+                  />
                 </div>
-                <div className="second-icons">
-                  <span>
-                    <FaShoppingCart />
-                  </span>
-                  <span>add to cart</span>
+                <div className="salary-data">
+                  <p className="trendy-title">{item.title}</p>
+                  <span className="salary">{item.salary}</span>
+                  <span className="main-salary">{item.mainSalary}</span>
+                </div>
+                <div className="icons-list">
+                  <div className="first-icons">
+                    <span className="icon-color">
+                      <FaEye />
+                    </span>
+                    <span className="text-icon">view details</span>
+                  </div>
+                  <div className="second-icons">
+                    <span className="icon-color">
+                      <FaShoppingCart />
+                    </span>
+                    <span className="text-icon">add to cart</span>
+                  </div>
                 </div>
               </div>
             </div>

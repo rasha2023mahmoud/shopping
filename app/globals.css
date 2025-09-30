@@ -656,25 +656,93 @@ transition: transform 0.3s ease;
 .trendy-container{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; 
+  justify-content:center; 
   align-items: center;
-  margin: 5px;
-  padding: 5px;  
+  margin: 0 ;
+  padding: 3px;  
+  gap: 9px;
+  width: 100%;
+  font-weight: bold;
+  margin-bottom: 30px
 }
 
-.trendy-card{
-   flex: 1 1  calc(25% - 10px);
-  text-align: center;
-  gap: 5px;
+.trendy-card{ 
+   flex: 1 1 1 calc(25% - 3px);
   align-items: center;
+  flex-direction: column;
   border: 2px solid var(--ring);
   border-radius: 6px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   -ms-border-radius: 6px;
   -o-border-radius: 6px; 
+  height: fit-content;
+  width:fit-content;
+   margin: 0 
+}
+
+.trendy-img{
   height: 200px;
-  width: 150px
+  width: 300px;
+}
+
+.image, .trendy-img{
+ overflow: hidden;
+  transition: transform 0.3s ease
+}
+
+.trendy-img:hover{ 
+  transform: scale(2, 2) 
+}
+
+.upper-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.icons-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2px;
+  margin: 2px;
+  gap: 35px;
+  border-top: 2px solid var(--ring);
+}
+
+
+.first-icons, .second-icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2px;
+  margin: 2px;
+  gap: 15px;
+  text-align: center;
+  align-items: center;
+}
+
+ .icon-color{
+  color: rgb(209, 156, 151);
+   cursor: pointer
+}
+
+.text-icon{
+  transition: all 1.0s;
+  cursor: pointer
+}
+
+.text-icon:hover{
+  color: rgb(209, 156, 151)
+}
+
+.main-salary{
+  color: oklch(0.705 0.015 286.067);
+  text-decoration:line-through;
+  margin: 3px;
+  padding: 3px
 }
 
 
