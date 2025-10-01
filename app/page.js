@@ -2,7 +2,7 @@ import ShowBar from "./components/ShowBar";
 import Cataloge from "./components/Cataloge";
 import Offer from "./components/Offer";
 import Title from "./components/Title";
-import TrendySection from "./components/TrendySection"
+import TrendySection from "./components/TrendySection";
 export default function Home() {
   return (
     <main>
@@ -10,7 +10,11 @@ export default function Home() {
       <Cataloge />
       <Offer />
       <Title text="Trandy Products" />
-      <TrendySection/>
+      <TrendySection dataUrl="/Trend.json" />
+      <div style={{ marginTop: "65px" }}>
+        <Title text="Just Arrived" />
+        <TrendySection dataUrl="/Trend.json" />
+      </div>
     </main>
   );
 }

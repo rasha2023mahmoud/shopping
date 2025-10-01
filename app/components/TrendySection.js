@@ -3,17 +3,23 @@
 import { useState, useEffect } from "react";
 import { FaEye } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
-export default function TrendySection() {
+export default function TrendySection({ dataUrl }) {
   const [trendy, setTrendy] = useState([]);
   useEffect(() => {
     async function fetchTrendy() {
-      const response = await fetch("/Trend.json");
-      const data = await response.json();
-      setTrendy(data);
+      try {
+        const response = await fetch(dataUrl);
+        const data = await response.json();
+        setTrendy(data);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
     }
-    fetchTrendy();
-  }, []);
 
+    if (dataUrl) {
+      fetchTrendy();
+    }
+  }, [dataUrl]);
   return (
     <>
       <div className="trendy-container">
