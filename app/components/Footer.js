@@ -13,7 +13,11 @@ export default function Footer() {
     <>
       <div className="footer-container">
         <div className="first-column">
-          <LogoTitle TitleDetails="shopper" />
+          <div className="title">
+            <h1>
+              <span>E</span>Shopper
+            </h1>
+          </div>
           <p>
             Dolore erat dolor sit lorem vero amet. Sed sit lorem magna, ipsum no
             sit erat lorem et magna ipsum dolore amet erat.
