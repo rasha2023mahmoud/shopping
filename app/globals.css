@@ -804,6 +804,138 @@ background-color: #EDF1FF;
   }
 }
 
+/* footer container */
+.footer-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  font-weight: bold;
+
+}
+.footer-container > div{
+  flex: 1;
+  padding: 10px
+}
+.first-column{
+  display: flex; 
+   justify-content:flex-end; 
+  flex-direction: column; 
+  align-items:flex-start;
+  text-align:left
+}
+
+.first-column p{
+  width: 90%
+}
+
+.location{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}/* footer container */
+.footer-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  font-weight: bold;
+
+}
+.footer-container > div{
+  flex: 1;
+  padding: 10px
+}
+.first-column{
+  display: flex; 
+   justify-content:flex-end; 
+  flex-direction: column; 
+  align-items:flex-start;
+  text-align:left
+}
+
+.first-column p{
+  width: 90%
+}
+
+.location{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* footer container */
+.footer-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  font-weight: bold;
+  background-color: #EDF1FF;
+  margin-top: 150px;
+  padding: 0
+}
+.footer-container > div{
+  flex: 1;
+  padding: 10px
+}
+.first-column{
+  display: flex; 
+   justify-content:flex-end; 
+  flex-direction: column; 
+  align-items:flex-start;
+  text-align:left;
+}
+
+.first-column p{
+  width: 90%;
+  padding: 20px
+}
+
+.location{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.second-column, .third-column{
+  display: flex;
+  align-items:flex-start;
+  flex-direction: column
+}
+
+.second-side{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 5px;
+  margin: 5px;
+  transition: .3s all;
+
+}
+ .second-side span:hover{
+  text-decoration:underline
+ }
+
+ .new-sletter{
+  display: flex !important;
+  flex-direction: column !important;
+  align-items:flex-start !important;
+  justify-content:flex-start !important;
+  width: 100% !important;
+  height: 100% !important;
+
+ }
+
+ .data-input{
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  justify-content: flex-start;
+ }
+
 
 
 .dark {

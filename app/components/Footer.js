@@ -1,5 +1,4 @@
 "use client";
-import LogoTitle from "./LogoTitle";
 import { CiLocationOn } from "react-icons/ci";
 import { FaEnvelope } from "react-icons/fa";
 import { BsFillTelephoneFill } from "react-icons/bs";
@@ -22,88 +21,121 @@ export default function Footer() {
             Dolore erat dolor sit lorem vero amet. Sed sit lorem magna, ipsum no
             sit erat lorem et magna ipsum dolore amet erat.
           </p>
-          <div>
-            <CiLocationOn />
-            <span>123 Street, New York, USA</span>
+          <div className="location">
+            <CiLocationOn
+              style={{ color: "#D19C97", marginLeft: "5px", cursor: "pointer" }}
+            />
+            <span style={{ padding: "10px" }}>123 Street, New York, USA</span>
           </div>
-          <div>
-            <FaEnvelope />
-            info@example.com
+          <div className="location">
+            <FaEnvelope
+              style={{ color: "#D19C97", marginLeft: "5px", cursor: "pointer" }}
+            />
+            <span style={{ padding: "10px" }}>info@example.com</span>
           </div>
-          <div>
-            <BsFillTelephoneFill />
-            +012 345 67890
+          <div className="location">
+            <BsFillTelephoneFill
+              style={{ color: "#D19C97", marginLeft: "5px", cursor: "pointer" }}
+            />
+            <span style={{ padding: "10px" }}>+1234567890</span>
           </div>
         </div>
         <div className="second-column">
           <h4>Quick Links</h4>
-          <div>
+          <div className="second-side">
+            <IoIosArrowForward />
             <span>Home</span>
-            <IoIosArrowForward />
           </div>
-          <div>
+          <div className="second-side">
+            <IoIosArrowForward />
             <span>Ourshop</span>
-            <IoIosArrowForward />
           </div>
-          <div>
+          <div className="second-side">
+            <IoIosArrowForward />
             <span>Shop Details</span>
-            <IoIosArrowForward />
           </div>
-          <div>
+          <div className="second-side">
+            <IoIosArrowForward />
             <span>Shopping cart</span>
-            <IoIosArrowForward />
           </div>
-          <div>
+          <div className="second-side">
+            <IoIosArrowForward />
             <span>Check out</span>
-            <IoIosArrowForward />
           </div>
-          <div>
-            <span>Contact us</span>
+          <div className="second-side">
             <IoIosArrowForward />
+            <span>Contact us</span>
           </div>
         </div>
         <div className="third-column">
           <h4>Quick Links</h4>
-          <div>
+          <div className="second-side">
+            <IoIosArrowForward />
             <span>Home</span>
-            <IoIosArrowForward />
           </div>
-          <div>
+          <div className="second-side">
+            <IoIosArrowForward />
             <span>Ourshop</span>
-            <IoIosArrowForward />
           </div>
-          <div>
+          <div className="second-side">
+            <IoIosArrowForward />
             <span>Shop Details</span>
-            <IoIosArrowForward />
           </div>
-          <div>
+          <div className="second-side">
+            <IoIosArrowForward />
             <span>Shopping cart</span>
-            <IoIosArrowForward />
           </div>
-          <div>
+          <div className="second-side">
+            <IoIosArrowForward />
             <span>Check out</span>
-            <IoIosArrowForward />
           </div>
-          <div>
-            <span>Contact us</span>
+          <div className="second-side">
             <IoIosArrowForward />
+            <span>Contact us</span>
           </div>
         </div>
         <div className="new-sletter">
           <h4>Newsletter</h4>
-          <div>
+          <div
+            className="form-input"
+            style={{ padding: "10px", margin: "10px" }}
+          >
             <Form>
               <Row className="mb-3">
-                <Form.Group as={Col} controlId="formGridEmail">
-                  <Form.Label>Your name</Form.Label>
-                  <Form.Control type="email" placeholder="Your name" />
-                </Form.Group>
-                <Form.Group as={Col} controlId="formGridPassword">
-                  <Form.Label>Your email</Form.Label>
-                  <Form.Control type="password" placeholder="Your email" />
-                </Form.Group>
+                <div className="data-input">
+                  <Form.Group as={Col} controlId="formGridEmail">
+                    <Form.Control
+                      type="email"
+                      placeholder="Your name"
+                      style={{
+                        marginTop: "10px",
+                        width: "300px",
+                        outline: "none",
+                      }}
+                    />
+                  </Form.Group>
+                  <Form.Group as={Col} controlId="formGridPassword">
+                    <Form.Control
+                      type="password"
+                      placeholder="Your email"
+                      style={{
+                        marginTop: "10px",
+                        width: "300px",
+                        outline: "none",
+                      }}
+                    />
+                  </Form.Group>
+                </div>
               </Row>
-              <Button variant="primary" type="submit">
+              <Button
+                variant="primary"
+                type="submit"
+                style={{
+                  width: "100%",
+                  backgroundColor: "#D19C97",
+                  border: "none",
+                }}
+              >
                 Submit
               </Button>
             </Form>
