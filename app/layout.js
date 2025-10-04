@@ -9,6 +9,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import WebList from "./components/WebList";
 import Sliders from "./components/Sliders";
 import ShowBar from "./components/ShowBar";
+import ScrollToTop from "./components/ScrollToTop";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -42,6 +43,7 @@ export default function RootLayout({ children }) {
                 <Sliders />
               </Col>
             </Row>
+            <ScrollToTop />
             {children}
           </Row>
         </Container>
