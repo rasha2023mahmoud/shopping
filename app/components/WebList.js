@@ -1,14 +1,19 @@
 "use client";
 import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
-
+import Link from "next/link";
 export default function webList() {
   return (
     <>
       <div className="first-list">
         <ul>
-          <li className="icon">Home</li>
-          <li className="icon">Shop</li>
+          <Link href="/">
+            {" "}
+            <li className="icon">Home</li>
+          </Link>
+          <Link href="/shop">
+            <li className="icon">Shop</li>
+          </Link>
           <li className="icon">Shop Details</li>
           <DropdownButton
             className="pages icon"
