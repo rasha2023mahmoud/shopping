@@ -7,7 +7,7 @@ import Header from "./components/Header";
 import SidebarLayout from "./components/SidebarLayout";
 import "bootstrap/dist/css/bootstrap.min.css";
 import WebList from "./components/WebList";
-import Sliders from "./components/Sliders";
+// import Sliders from "./components/Sliders";
 import ShowBar from "./components/ShowBar";
 import ScrollToTop from "./components/ScrollToTop";
 const geistSans = Geist({
@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
               </Col>
               <Col style={{ flex: 1 }}>
                 <WebList />
-                <Sliders />
+                {/* <Sliders /> */}
               </Col>
             </Row>
             <ScrollToTop />
