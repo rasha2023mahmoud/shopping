@@ -455,7 +455,8 @@ ul .pages{
   align-items: center;
   flex-wrap: wrap;
   padding: 20px;
-  margin-bottom: 16px
+  margin-bottom: 16px;
+      margin-top: -105px;
 }
 
 .show-bar .show-details{
@@ -833,7 +834,9 @@ background-color: #EDF1FF;
   display: flex;
   flex-direction: row;
   align-items: center;
-}/* footer container */
+}
+
+/* footer container */
 .footer-container{
   display: flex;
   align-items: center;
@@ -1009,11 +1012,53 @@ background-color: #EDF1FF;
   }
   }
 
-  
+  /* shop page --- main section  */
+  .shop-Title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 
+  .home-btn{
+    color: #D19C97;
+    transition: all .3s
+  }
 
+  .home-btn:hover{
+    text-decoration:underline
+  }
 
+  .filter-container, .color-container{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: flex-end;
+    font-weight: bold;
+    border-bottom: 2px solid #DDD;
+  }
 
+  .filter-brice, .ckeck-color{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+    padding-bottom: 5px;
+    margin-bottom: 5px
+  }
+
+  .ckeck-price, .first-color{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    gap: 10px
+  }
+
+.ckeck-price .fake-checkbox{
+  border: 1px solid hsl(240 4.8% 95.9%)
+}
 .dark {
   --sidebar: hsl(240 5.9% 10%);
   --sidebar-foreground: hsl(240 4.8% 95.9%);
