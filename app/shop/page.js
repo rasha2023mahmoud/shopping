@@ -3,6 +3,10 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Link from "next/link";
 import FilterPrice from "./components/FilterPrice";
+import SearchRow from "./components/SearchRow";
+import TrendySection from "../components/TrendySection";
+import ShopButtons from "./components/ShopButtons"
+import Footer from "../components/Footer";
 export default function Shop() {
   return (
     <>
@@ -46,10 +50,18 @@ export default function Shop() {
             >
               <FilterPrice />
             </Col>
-            <Col md={10}></Col>
+            <Col md={10}>
+            <div className="shop-search" style={{marginTop: "-282px;"}}>
+              <SearchRow/>
+            <TrendySection dataUrl="/Trend.json"/>
+            </div>
+            </Col>
           </Row>
         </Row>
+        <ShopButtons/>
+        <Footer/>
       </Container>
+        
     </>
   );
 }

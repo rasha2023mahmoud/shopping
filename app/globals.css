@@ -1026,39 +1026,97 @@ background-color: #EDF1FF;
   }
 
   .home-btn:hover{
-    text-decoration:underline
+    text-decoration:underline;
   }
 
-  .filter-container, .color-container{
-    display: flex;
-    flex-direction: column;
-    align-items:flex-start;
-    justify-content: flex-end;
-    font-weight: bold;
-    border-bottom: 2px solid #DDD;
+  /* small screen */
+@media (max-width: 768px) {
+  .shop-Title{
+    max-width: 100%;
+    
   }
-
-  .filter-brice, .ckeck-color{
-    display: flex;
-    justify-content:flex-start;
-    align-items: center;
-    flex-direction: row;
-    gap: 30px;
-    padding-bottom: 5px;
-    margin-bottom: 5px
+  .filter-container{
+    margin-top: 60px
   }
-
-  .ckeck-price, .first-color{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-    gap: 10px
-  }
-
-.ckeck-price .fake-checkbox{
-  border: 1px solid hsl(240 4.8% 95.9%)
 }
+
+/* meduim screen */
+@media (min-width: 992px){
+
+}
+
+
+.filter-brice, .ckeck-color {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0;                /* نشيل أي هامش خارجي */
+  padding: 6px 0;           /* نحدد مسافة عمودية ثابتة بين الصفوف */
+  /* border-bottom: 1px solid #f0f0f0;  */
+}
+.ckeck-price,
+.first-color {
+  display: flex;
+  align-items: center;
+  gap: 10px;                /* مسافة بين الـcheckbox والـlabel */
+}
+
+.filter-container,
+.color-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-bottom: 2px solid #DDD;
+  font-weight: bold;
+  width: 100%;
+}
+
+.filter-brice span,
+.ckeck-color span {
+  min-width: 50px;
+  text-align: right;
+  margin-left: 25px;        /* مسافة أفقية بسيطة وثابتة */
+}
+
+input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  vertical-align: middle;
+}
+
+ input[type="checkbox"]:checked {
+  accent-color: #D19C97 !important
+}
+
+/* small screen */
+@media (max-width: 768px) {
+  
+}
+
+/* meduim screen */
+@media (min-width: 992px){
+
+}
+
+/* search container */
+
+.search-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.shop-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: 0 auto;
+}
+
+
 .dark {
   --sidebar: hsl(240 5.9% 10%);
   --sidebar-foreground: hsl(240 4.8% 95.9%);

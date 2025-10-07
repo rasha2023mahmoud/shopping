@@ -6,45 +6,45 @@ export default function FilterPrice() {
         <h4>Filter Price</h4>
         <div className="filter-brice">
           <div className="ckeck-price">
-            <input type="checkbox" id="price1" checked />
+            <input type="checkbox" id="price1" />
             <label htmlFor="price1">All price</label>
           </div>
-          <span style={{ marginLeft: "82px" }}>1000</span>
+          <span>1000</span>
         </div>
         <div className="filter-brice">
           <div className="ckeck-price">
             <input type="checkbox" id="price1" />
-            <label htmlFor="price1">0 -100$</label>
+            <label htmlFor="price1">0-100$</label>
           </div>
-          <span style={{ marginLeft: "82px" }}>150$</span>
+          <span>150$</span>
         </div>
         <div className="filter-brice">
           <div className="ckeck-price">
             <input type="checkbox" id="price1" />
-            <label htmlFor="price1">100$ - 200$</label>
+            <label htmlFor="price1">100$-200$</label>
           </div>
-          <span style={{ marginLeft: "51px" }}>295$</span>
+          <span>295$</span>
         </div>
         <div className="filter-brice">
           <div className="ckeck-price">
             <input type="checkbox" id="price1" />
-            <label htmlFor="price1">200$ - 300$</label>
+            <label htmlFor="price1">200$-300$</label>
           </div>
-          <span style={{ marginLeft: "51px" }}>246$</span>
+          <span>246$</span>
         </div>
         <div className="filter-brice">
           <div className="ckeck-price">
             <input type="checkbox" id="price1" />
-            <label htmlFor="price1">300$ - 400$</label>
+            <label htmlFor="price1">300$-400$</label>
           </div>
-          <span style={{ marginLeft: "51px" }}>145$</span>
+          <span>145$</span>
         </div>
         <div className="filter-brice">
           <div className="ckeck-price">
             <input type="checkbox" id="price1" />
-            <label htmlFor="price1">400$ 500$</label>
+            <label htmlFor="price1">400$-500$</label>
           </div>
-          <span style={{ marginLeft: "59px" }}>168$</span>
+          <span>168$</span>
         </div>
       </div>
       <div className="color-container">
@@ -53,42 +53,86 @@ export default function FilterPrice() {
             <input type="checkbox" id="price1" checked />
             <label htmlFor="price1">All color</label>
           </div>
-          <span style={{ marginLeft: "82px" }}>1000</span>
+          <span>1000</span>
         </div>
         <div className="ckeck-color">
           <div className="first-color">
             <input type="checkbox" id="price1" />
             <label htmlFor="price1">Black</label>
           </div>
-          <span style={{ marginLeft: "890px" }}>100</span>
+          <span>100</span>
         </div>
         <div className="ckeck-color">
           <div className="first-color">
             <input type="checkbox" id="price1" />
             <label htmlFor="price1">White</label>
           </div>
-          <span style={{ marginLeft: "82px" }}>295</span>
+          <span >295</span>
         </div>
         <div className="ckeck-color">
           <div className="first-color">
             <input type="checkbox" id="price1" />
             <label htmlFor="price1">Red</label>
           </div>
-          <span style={{ marginLeft: "82px" }}>145</span>
+          <span >145</span>
         </div>
         <div className="ckeck-color">
           <div className="first-color">
             <input type="checkbox" id="price1" />
             <label htmlFor="price1">Blue</label>
           </div>
-          <span style={{ marginLeft: "82px" }}>264</span>
+          <span >264</span>
         </div>
         <div className="ckeck-color">
           <div className="first-color">
             <input type="checkbox" id="price1" />
             <label htmlFor="price1">Green</label>
           </div>
-          <span style={{ marginLeft: "82px" }}>168</span>
+          <span >168</span>
+        </div>
+      </div>
+      <div className="color-container">
+        <div className="ckeck-color">
+          <div className="first-color">
+            <input type="checkbox" id="price1" checked />
+            <label htmlFor="price1">Filter by size</label>
+          </div>
+          <span>1000</span>
+        </div>
+        <div className="ckeck-color">
+          <div className="first-color">
+            <input type="checkbox" id="price1" />
+            <label htmlFor="price1">XS</label>
+          </div>
+          <span>100</span>
+        </div>
+        <div className="ckeck-color">
+          <div className="first-color">
+            <input type="checkbox" id="price1" />
+            <label htmlFor="price1">S</label>
+          </div>
+          <span >295</span>
+        </div>
+        <div className="ckeck-color">
+          <div className="first-color">
+            <input type="checkbox" id="price1" />
+            <label htmlFor="price1">M</label>
+          </div>
+          <span >145</span>
+        </div>
+        <div className="ckeck-color">
+          <div className="first-color">
+            <input type="checkbox" id="price1" />
+            <label htmlFor="price1">L</label>
+          </div>
+          <span >264</span>
+        </div>
+        <div className="ckeck-color">
+          <div className="first-color">
+            <input type="checkbox" id="price1" />
+            <label htmlFor="price1">XL</label>
+          </div>
+          <span >168</span>
         </div>
       </div>
     </>
