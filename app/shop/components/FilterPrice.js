@@ -1,140 +1,77 @@
 "use client";
+import { useEffect, useState } from "react";
 export default function FilterPrice() {
+  const [data, setData] = useState(null);
+  const [checkItems, setCheckItems] = useState({});
+  useEffect(()=>{
+      async function fetchFilter(){
+        const response = await fetch("/filter.json");
+        const json = await response.json();
+        setData(json);
+      }
+      fetchFilter()
+  },[])
+  const handleCheck = (id) =>{
+    setCheckItems((prev)=>({
+      ...prev,
+      [id] : !prev[id]
+    }))
+  }
+
+  if(!data) return <p>data loading ....</p>
   return (
     <>
-      <div className="filter-container">
+      {/* filter price */}
+       <div className="filter-container">
         <h4>Filter Price</h4>
-        <div className="filter-brice">
-          <div className="ckeck-price">
-            <input type="checkbox" id="price1" />
-            <label htmlFor="price1">All price</label>
-          </div>
-          <span>1000</span>
-        </div>
-        <div className="filter-brice">
-          <div className="ckeck-price">
-            <input type="checkbox" id="price1" />
-            <label htmlFor="price1">0-100$</label>
-          </div>
-          <span>150$</span>
-        </div>
-        <div className="filter-brice">
-          <div className="ckeck-price">
-            <input type="checkbox" id="price1" />
-            <label htmlFor="price1">100$-200$</label>
-          </div>
-          <span>295$</span>
-        </div>
-        <div className="filter-brice">
-          <div className="ckeck-price">
-            <input type="checkbox" id="price1" />
-            <label htmlFor="price1">200$-300$</label>
-          </div>
-          <span>246$</span>
-        </div>
-        <div className="filter-brice">
-          <div className="ckeck-price">
-            <input type="checkbox" id="price1" />
-            <label htmlFor="price1">300$-400$</label>
-          </div>
-          <span>145$</span>
-        </div>
-        <div className="filter-brice">
-          <div className="ckeck-price">
-            <input type="checkbox" id="price1" />
-            <label htmlFor="price1">400$-500$</label>
-          </div>
-          <span>168$</span>
-        </div>
-      </div>
+        {data.priceFilters.map((item)=>{
+            return (
+              <div className="filter-brice" key={item.id}>
+                <div className="check-price">
+                  <input type="checkbox" id={item.id} checked={!!checkItems[item.id]} onChange={() => handleCheck(item.id)}/> 
+                  <label htmlFor={item.id} style={{color:checkItems[item.id] ? "#D19C97" : "#333",}}>{item.label}</label>
+                </div>
+                <span>{item.value}</span>
+            </div>
+            )
+        })}
+      
+
+      {/* colorFilters */}
       <div className="color-container">
-        <div className="ckeck-color">
-          <div className="first-color">
-            <input type="checkbox" id="price1" checked />
-            <label htmlFor="price1">All color</label>
-          </div>
-          <span>1000</span>
-        </div>
-        <div className="ckeck-color">
-          <div className="first-color">
-            <input type="checkbox" id="price1" />
-            <label htmlFor="price1">Black</label>
-          </div>
-          <span>100</span>
-        </div>
-        <div className="ckeck-color">
-          <div className="first-color">
-            <input type="checkbox" id="price1" />
-            <label htmlFor="price1">White</label>
-          </div>
-          <span >295</span>
-        </div>
-        <div className="ckeck-color">
-          <div className="first-color">
-            <input type="checkbox" id="price1" />
-            <label htmlFor="price1">Red</label>
-          </div>
-          <span >145</span>
-        </div>
-        <div className="ckeck-color">
-          <div className="first-color">
-            <input type="checkbox" id="price1" />
-            <label htmlFor="price1">Blue</label>
-          </div>
-          <span >264</span>
-        </div>
-        <div className="ckeck-color">
-          <div className="first-color">
-            <input type="checkbox" id="price1" />
-            <label htmlFor="price1">Green</label>
-          </div>
-          <span >168</span>
-        </div>
+        <h4>Color Filters</h4>
+        {
+          data.colorFilters.map((item)=>{
+            return(
+             <div className="check-color" key={item.id}>
+              <div className="first-color">
+                <input type="checkbox" id={item.id} checked={!!checkItems[item.id]} onChange={()=> handleCheck(item.id)} />
+                <label htmlFor={item.id} style={{color:checkItems[item.id] ? "#D19C97" : "#333"}}>{item.label}</label>
+              </div>
+              <span>{item.value}</span>
+             </div> 
+            )
+          })
+        }
       </div>
-      <div className="color-container">
-        <div className="ckeck-color">
-          <div className="first-color">
-            <input type="checkbox" id="price1" checked />
-            <label htmlFor="price1">Filter by size</label>
+          {/* size container */}
+          <div className="size-container">
+          <h4>Filter Size</h4>
+          {
+            data.sizeFilters.map((item) =>{
+              return(
+                <div  className="check-size" key={item.id}>
+                  <div className="filter-size">
+                  <input type="checkbox" id={item.id} checked={!!checkItems[item.id]} onChange={()=> handleCheck(item.id)}/>
+                  <label htmlFor={item.id} style={{color: checkItems[item.id] ? "#D19C97" : "#333"}}>{item.label}</label>
+                  </div>
+                  <span>{item.value}</span>
+                </div>
+              )
+            })
+          }
           </div>
-          <span>1000</span>
-        </div>
-        <div className="ckeck-color">
-          <div className="first-color">
-            <input type="checkbox" id="price1" />
-            <label htmlFor="price1">XS</label>
           </div>
-          <span>100</span>
-        </div>
-        <div className="ckeck-color">
-          <div className="first-color">
-            <input type="checkbox" id="price1" />
-            <label htmlFor="price1">S</label>
-          </div>
-          <span >295</span>
-        </div>
-        <div className="ckeck-color">
-          <div className="first-color">
-            <input type="checkbox" id="price1" />
-            <label htmlFor="price1">M</label>
-          </div>
-          <span >145</span>
-        </div>
-        <div className="ckeck-color">
-          <div className="first-color">
-            <input type="checkbox" id="price1" />
-            <label htmlFor="price1">L</label>
-          </div>
-          <span >264</span>
-        </div>
-        <div className="ckeck-color">
-          <div className="first-color">
-            <input type="checkbox" id="price1" />
-            <label htmlFor="price1">XL</label>
-          </div>
-          <span >168</span>
-        </div>
-      </div>
     </>
   );
 }

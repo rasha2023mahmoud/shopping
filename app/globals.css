@@ -1046,20 +1046,19 @@ background-color: #EDF1FF;
 }
 
 
-.filter-brice, .ckeck-color {
+.filter-brice, .check-color {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin: 0;                /* نشيل أي هامش خارجي */
-  padding: 6px 0;           /* نحدد مسافة عمودية ثابتة بين الصفوف */
-  /* border-bottom: 1px solid #f0f0f0;  */
+  margin: 0;                
+  padding: 6px 0;          
 }
-.ckeck-price,
+.check-price,
 .first-color {
   display: flex;
   align-items: center;
-  gap: 10px;                /* مسافة بين الـcheckbox والـlabel */
+  gap: 10px;               
 }
 
 .filter-container,
@@ -1073,10 +1072,10 @@ background-color: #EDF1FF;
 }
 
 .filter-brice span,
-.ckeck-color span {
+.check-color span {
   min-width: 50px;
   text-align: right;
-  margin-left: 25px;        /* مسافة أفقية بسيطة وثابتة */
+  margin-left: 25px;        
 }
 
 input[type="checkbox"] {

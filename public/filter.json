@@ -1,0 +1,28 @@
+{
+  "priceFilters": [
+    { "id": "price1", "label": "All price", "value": "1000" },
+    { "id": "price2", "label": "0 - 100$", "value": "150$" },
+    { "id": "price3", "label": "100$ - 200$", "value": "295$" },
+    { "id": "price4", "label": "200$ - 300$", "value": "246$" },
+    { "id": "price5", "label": "300$ - 400$", "value": "145$" },
+    { "id": "price6", "label": "400$ - 500$", "value": "168$" }
+  ],
+
+  "colorFilters": [
+    { "id": "color1", "label": "All color", "value": "1000" },
+    { "id": "color2", "label": "Black", "value": "100" },
+    { "id": "color3", "label": "White", "value": "295" },
+    { "id": "color4", "label": "Red", "value": "145" },
+    { "id": "color5", "label": "Blue", "value": "264" },
+    { "id": "color6", "label": "Green", "value": "168" }
+  ],
+
+  "sizeFilters": [
+    { "id": "size1", "label": "All size", "value": "1000" },
+    { "id": "size2", "label": "XS", "value": "100" },
+    { "id": "size3", "label": "S", "value": "295" },
+    { "id": "size4", "label": "M", "value": "145" },
+    { "id": "size5", "label": "L", "value": "264" },
+    { "id": "size6", "label": "XL", "value": "168" }
+  ]
+}
