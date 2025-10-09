@@ -8,6 +8,7 @@ import { TiSocialFacebook } from "react-icons/ti";
 import { TiSocialInstagram } from "react-icons/ti";
 import { TiSocialPinterestCircular } from "react-icons/ti";
 import { TiSocialYoutube } from "react-icons/ti";
+import ColorfulInput from "../components/ColorfulInput";
 
 export default function Colorful() {
   return (
@@ -102,10 +103,11 @@ export default function Colorful() {
             diam et rebum kasd rebum.
           </p>
           <div className="select-type">
-            <label>Sizes</label>
+            {/* <label>Sizes</label>
             <input type="checkbox" />
             <label>Types</label>
-            <input type="checkbox" />
+            <input type="checkbox" /> */}
+            <ColorfulInput />
           </div>
           <div className="add-cart">
             <AiFillPlusSquare />

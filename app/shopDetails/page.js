@@ -2,6 +2,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Link from "next/link";
+import Colorful from "./components/Colorful";
 
 // import ShopButtons from "./components/ShopButtons";
 import Footer from "../components/Footer";
@@ -45,7 +46,9 @@ export default function ShopDetails() {
               className="first-section"
               md={2}
               style={{ flex: 1, marginTop: "-282px" }}
-            ></Col>
+            >
+              <Colorful />
+            </Col>
             <Col md={10}>
               <div
                 className="shop-search"
