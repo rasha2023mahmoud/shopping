@@ -14,7 +14,7 @@ export default function webList() {
           <Link href="/shop">
             <li className="icon">Shop</li>
           </Link>
-          <li className="icon">Shop Details</li>
+          <Link href="/shopDetails"><li className="icon">Shop Details</li></Link>
           <DropdownButton
             className="pages icon"
             id="dropdown-basic-button"
