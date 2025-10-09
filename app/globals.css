@@ -1040,53 +1040,30 @@ background-color: #EDF1FF;
   }
 }
 
-/* meduim screen */
-@media (min-width: 992px){
-
-}
-
-
-.filter-brice, .check-color {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  margin: 0;                
-  padding: 6px 0;          
-}
-.check-price,
-.first-color {
-  display: flex;
-  align-items: center;
-  gap: 10px;               
-}
-
-.filter-container,
-.color-container {
+.filter-container, .color-container, .size-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  border-bottom: 2px solid #DDD;
+  justify-content: space-between;
   font-weight: bold;
   width: 100%;
+  gap: 10px
+
 }
 
-.filter-brice span,
-.check-color span {
-  min-width: 50px;
-  text-align: right;
-  margin-left: 25px;        
+.filter-brice , .check-color, .check-size{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ width: 100%;
+  /* gap: 15px; */
 }
 
-input[type="checkbox"] {
-  width: 16px;
-  height: 16px;
-  margin: 0;
-  vertical-align: middle;
+.filter-brice span , .check-color span, .check-size span{
+  margin-left: 50px
 }
-
- input[type="checkbox"]:checked {
-  accent-color: #D19C97 !important
+input{
+  margin: 4px !important;
 }
 
 /* small screen */
@@ -1095,10 +1072,77 @@ input[type="checkbox"] {
 }
 
 /* meduim screen */
-@media (min-width: 992px){
+@media (max-width: 1300px){
+.filter-container, .color-container, .size-container{
+  max-width: 100%;
+  display: flex;
+  flex-direction: column
+}
+.filter-brice , .check-color, .check-size{
+  display: flex;
+  align-items: center;
+flex-direction: column;
+  justify-content: center;
+}
+.check-price{
+   display: flex;
+  align-items: center;
+  flex-direction: row;
+  max-width: 100%;
+  /* margin: 5px */
+}
+.filter-brice span , .check-color span, .check-size span{
+  margin-left: 40px
+}
 
 }
 
+/* meduim screen */
+@media (max-width: 992px){
+  .filter-container, .color-container, .size-container{
+  max-width: 50%;
+  display: flex;
+  flex-direction: column
+}
+.filter-brice , .check-color, .filter-size{
+  display: flex;
+  align-items: flex-start;
+flex-direction: row;
+max-width: 100%
+  /* justify-content: space-between; */
+}
+.check-price{
+   display: flex;
+  align-items: center;
+  flex-direction: row;
+  max-width: 100%;
+  /* margin: 5px */
+}
+}
+
+/* meduim screen */
+@media (max-width: 992px){
+   .filter-container, .color-container, .size-container{
+ width: 100%;
+  display: flex;
+  flex-direction: column
+}
+.filter-brice , .check-color, .check-size{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.check-price, .first-color, .check-size{
+   display: flex;
+  align-items: center;
+  flex-direction: row;
+  max-width: 100%;
+}
+.filter-container{
+  margin-bottom:  100%;
+}
+}
 /* search container */
 
 .search-container{
@@ -1113,7 +1157,7 @@ input[type="checkbox"] {
   justify-content: center;
   flex-direction: row;
   margin: 0 auto;
-}
+} 
 
 
 .dark {
