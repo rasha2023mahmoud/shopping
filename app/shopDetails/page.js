@@ -9,7 +9,7 @@ import Footer from "../components/Footer";
 export default function ShopDetails() {
   return (
     <>
-      <Container fluid className="min-vh-100">
+      <Container fluid className="min-vh-90" style={{marginBottom:"50px"}}>
         <Row>
           <Row xs={1} md={2}>
             <Col
@@ -38,28 +38,8 @@ export default function ShopDetails() {
           </Row>
         </Row>
       </Container>
-
-      <Container fluid className="min-vh-100">
-        <Row>
-          <Row xs={1} md={2}>
-            <Col
-              className="first-section"
-              md={2}
-              style={{ flex: 1, marginTop: "-282px" }}
-            >
-              <Colorful />
-            </Col>
-            <Col md={10}>
-              <div
-                className="shop-search"
-                style={{ marginTop: "-282px" }}
-              ></div>
-            </Col>
-          </Row>
-        </Row>
-        {/* <ShopButtons /> */}
-        <Footer />
-      </Container>
+      <Colorful />
+      <Footer />
     </>
   );
 }

@@ -29,44 +29,50 @@ export default function ColorfulInput() {
 
   return (
     <>
-      <div>
-        <h4>Sizes:</h4>
-        {checkSizes.map((item) => (
-          <div key={item.id}>
-            <input
-              type="checkbox"
-              id={item.id}
-              checked={!!data[item.id]}
-              onChange={() => handleCheck(item.id)}
-            />
-            <label
-              htmlFor={item.id}
-              style={{ color: data[item.id] ? "#D19C97" : "#333" }}
-            >
-              {item.label}
-            </label>
-          </div>
-        ))}
-      </div>
+      <div className="input-container">
+        <div className="first-input">
+          <h4>Sizes:</h4>
+          {checkSizes.map((item) => (
+            <div key={item.id}>
+              <input
+                type="radio"
+                id={item.id}
+                checked={!!data[item.id]}
+                onChange={() => handleCheck(item.id)}
+                className="select"
+              />
+              <label
+                htmlFor={item.id}
+                style={{ color: data[item.id] ? "#D19C97" : "#333" }}
+                className="data"
+              >
+                {item.label}
+              </label>
+            </div>
+          ))}
+        </div>
 
-      <div>
-        <h4>Colors:</h4>
-        {checkColors.map((item) => (
-          <div key={item.id}>
-            <input
-              type="checkbox"
-              id={item.id}
-              checked={!!data[item.id]}
-              onChange={() => handleCheck(item.id)}
-            />
-            <label
-              htmlFor={item.id}
-              style={{ color: data[item.id] ? "#D19C97" : "#333" }}
-            >
-              {item.label}
-            </label>
-          </div>
-        ))}
+        <div className="second-input">
+          <h4>Colors:</h4>
+          {checkColors.map((item) => (
+            <div key={item.id}>
+              <input
+                type="radio"
+                id={item.id}
+                checked={!!data[item.id]}
+                onChange={() => handleCheck(item.id)}
+                className="select"
+              />
+              <label
+                htmlFor={item.id}
+                style={{ color: data[item.id] ? "#D19C97" : "#333" }}
+                className="data"
+              >
+                {item.label}
+              </label>
+            </div>
+          ))}
+        </div>
       </div>
     </>
   );

@@ -131,6 +131,11 @@ html, body{
   box-sizing: border-box;
   
 }
+body {
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: "Arial", sans-serif;
+}
 /* محتاجة كتابة  */
 .container, .container-fluid {
   padding-left: 0 !important;
@@ -1109,14 +1114,14 @@ flex-direction: column;
   align-items: flex-start;
 flex-direction: row;
 max-width: 100%
-  /* justify-content: space-between; */
+
 }
 .check-price{
    display: flex;
   align-items: center;
   flex-direction: row;
   max-width: 100%;
-  /* margin: 5px */
+
 }
 }
 
@@ -1159,15 +1164,102 @@ max-width: 100%
   margin: 0 auto;
 } 
 
-
-.dark {
-  --sidebar: hsl(240 5.9% 10%);
-  --sidebar-foreground: hsl(240 4.8% 95.9%);
-  --sidebar-primary: hsl(224.3 76.3% 48%);
-  --sidebar-primary-foreground: hsl(0 0% 100%);
-  --sidebar-accent: hsl(240 3.7% 15.9%);
-  --sidebar-accent-foreground: hsl(240 4.8% 95.9%);
-  --sidebar-border: hsl(240 3.7% 15.9%);
-  --sidebar-ring: hsl(217.2 91.2% 59.8%);
+/* Shop details page */
+.colorful-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  flex-direction: row;
+  align-items: flex-start;
+  font-weight: bold
+}
+.paragraph{
+  color: rgb(111, 111, 111);
+  padding: 3px;
+  margin: 3px
+}
+.slide-container{
+  flex: 1 1 50%;
+  width: 500px;
+  position: relative;
+}
+.details-container{
+  flex: 1 1 50%;
 }
 
+.slider-img{
+  width: 500px
+}
+
+.rating{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 5px;
+  text-align: center;
+}
+
+.rating p{
+  color: rgb(111, 111, 111);
+  padding: 3px;
+  margin: 3px
+}
+
+span{
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.input-container{
+  display: flex;
+  flex-direction:column;
+  text-align: center;
+  align-items: flex-start;
+}
+
+.first-input, .second-input{
+ display: flex;
+  flex-direction:row;
+  text-align: center;
+  align-items: center;
+  gap: 5px
+} 
+
+ .data{
+  color: rgb(111, 111, 111) !important;
+}
+
+.add-cart{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:flex-start;
+  padding: 3px;
+  margin: 3px;
+  cursor: pointer
+}
+.add{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:center;
+  padding: 3px;
+  margin: 3px;
+  vertical-align: middle;
+  background-color:#D19C97;
+  width: 152px;
+  height: 37px;
+  cursor: pointer
+}
+
+.socialmedia-icons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:flex-start;
+  gap: 5px;
+  padding: 3px;
+  margin: 3px;
+  cursor: pointer;
+  font-size: 30px
+}
