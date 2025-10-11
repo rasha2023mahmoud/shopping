@@ -3,13 +3,13 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Link from "next/link";
 import Colorful from "./components/Colorful";
-
+import AccordianParagraph from "./AccordianParagraph";
 // import ShopButtons from "./components/ShopButtons";
 import Footer from "../components/Footer";
 export default function ShopDetails() {
   return (
     <>
-      <Container fluid className="min-vh-90" style={{marginBottom:"50px"}}>
+      <Container fluid className="min-vh-90" style={{ marginBottom: "50px" }}>
         <Row>
           <Row xs={1} md={2}>
             <Col
@@ -37,9 +37,10 @@ export default function ShopDetails() {
             </Col>
           </Row>
         </Row>
+        <Colorful />
+        <AccordianParagraph />
+        <Footer />
       </Container>
-      <Colorful />
-      <Footer />
     </>
   );
 }
