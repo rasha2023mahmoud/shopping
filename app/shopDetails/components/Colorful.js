@@ -8,7 +8,7 @@ import { TiSocialPinterestCircular } from "react-icons/ti";
 import { TiSocialYoutube } from "react-icons/ti";
 import { FaCartArrowDown } from "react-icons/fa";
 import ColorfulInput from "../ColorfulInput";
-import SliderShowDetails from "../SliderShowDetails";
+import SliderShowDetails from "./SliderShowDetails"
 // import Carousel from "react-bootstrap/Carousel";
 // import Image from "next/image";
 export default function Colorful() {
