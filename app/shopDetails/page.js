@@ -3,7 +3,6 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Link from "next/link";
 import Colorful from "./components/Colorful";
-import AccordianParagraph from "./AccordianParagraph";
 // import ShopButtons from "./components/ShopButtons";
 import Footer from "../components/Footer";
 export default function ShopDetails() {
@@ -38,7 +37,6 @@ export default function ShopDetails() {
           </Row>
         </Row>
         <Colorful />
-        <AccordianParagraph />
         <Footer />
       </Container>
     </>
