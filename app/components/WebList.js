@@ -14,7 +14,9 @@ export default function webList() {
           <Link href="/shop">
             <li className="icon">Shop</li>
           </Link>
-          <Link href="/shopDetails"><li className="icon">Shop Details</li></Link>
+          <Link href="/shopDetails">
+            <li className="icon">Shop Details</li>
+          </Link>
           <DropdownButton
             className="pages icon"
             id="dropdown-basic-button"
@@ -22,7 +24,9 @@ export default function webList() {
             title="Pages"
             style={{ fontWeight: "700" }}
           >
-            <Dropdown.Item href="#/action-1">Shop cart</Dropdown.Item>
+            <Dropdown.Item as={Link} href="/ShopCart">
+              Shop cart
+            </Dropdown.Item>
             <Dropdown.Item href="#/action-2">Checkout</Dropdown.Item>
           </DropdownButton>
           <li className="icon">Content</li>
