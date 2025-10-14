@@ -630,6 +630,7 @@ transition: transform 0.3s ease;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
+  font-size: 35px;
 }
 
 .section-title::after,
@@ -1263,3 +1264,71 @@ span{
   cursor: pointer;
   font-size: 30px
 }
+
+/* also like container */
+.alsoLike-container {
+  display: flex;
+  flex-wrap: nowrap;     
+  overflow-x: auto;      
+  overflow-y: hidden;    
+  scroll-behavior: smooth;
+  width: 100%;
+  gap: 20px;
+  cursor: grab;
+  padding-bottom: 10px;
+  font-size: 16px;
+  
+}
+
+.alsoLike-container:active {
+  cursor: grabbing;
+}
+
+.alsoLike-container .col-sm-4 {
+  min-width: 150px;
+  flex-shrink: 0;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border:2px solid var(--ring);
+}
+
+.like-img{
+  transition: transform .2s all ease-in-out;
+}
+
+.like-img:hover{
+    transform:  scale(1.5, 1.5);
+}
+
+.alsoLike-container::-webkit-scrollbar {
+  height: 6px;
+}
+.alsoLike-container::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+.prices{
+  padding: 3px;
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px
+}
+.first-price{
+      font-size: 16px;
+    margin-left: 25px;
+}
+
+.second-price{
+  text-decoration:line-through;
+  font-weight: lighter;
+   font-size: 16px;
+    margin-left: 25px;
+}
+
+
