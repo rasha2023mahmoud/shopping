@@ -3,6 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Link from "next/link";
 import Footer from "../components/Footer";
+import Table from"./Table"
 export default function ShopCart() {
   return (
     <>
@@ -34,7 +35,7 @@ export default function ShopCart() {
             </Col>
           </Row>
         </Row>
-
+        <Table/>
         <Footer />
       </Container>
     </>
