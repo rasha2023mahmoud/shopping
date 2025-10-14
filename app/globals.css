@@ -1277,7 +1277,7 @@ span{
   cursor: grab;
   padding-bottom: 10px;
   font-size: 16px;
-  
+  margin-top: 100px;
 }
 
 .alsoLike-container:active {
