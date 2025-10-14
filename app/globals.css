@@ -1331,4 +1331,32 @@ span{
     margin-left: 25px;
 }
 
+/* table */
+table{
+  border: 2px solid rgb(237, 241, 255)
+}
+thead tr th{
+  background-color: rgb(237, 241, 255);
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  height: 50px;
+  
+}
+
+tbody tr {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  height: 100px;
+  max-width: 600px;
+  border: 2px solid rgb(237, 241, 255)
+}
+
+tr td{
+  border: 2px solid rgb(237, 241, 255)
+}
+
+
+
 
