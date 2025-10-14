@@ -5,6 +5,7 @@ import Link from "next/link";
 import Colorful from "./components/Colorful";
 // import ShopButtons from "./components/ShopButtons";
 import Footer from "../components/Footer";
+import AlsoLike from"./components/AlsoLike";
 export default function ShopDetails() {
   return (
     <>
@@ -37,6 +38,7 @@ export default function ShopDetails() {
           </Row>
         </Row>
         <Colorful />
+        <AlsoLike/>
         <Footer />
       </Container>
     </>
