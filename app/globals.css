@@ -1265,6 +1265,15 @@ span{
   font-size: 30px
 }
 
+@media (max-width: 768px){
+.colorful-container{
+display: flex;
+flex-direction: column;
+max-width: 100%
+}
+}
+
+
 /* also like container */
 .alsoLike-container {
   display: flex;
@@ -1359,6 +1368,112 @@ td span{
 }
 
 
+@media (max-width: 768px){
+  table{
+    max-width: 100%;
+    font-size: 10px;
+  }
+  tbody tr{
+    font-size: 10px;
+    margin: 0 auto;
+  }
+  td span{
+    font-size: 10px;
+  }
+  td div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .add-cart{
+    font-size: 10px !important;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* summery container */
+
+.summery-text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 50px;
+  border: 2px solid rgb(237, 241, 255);
+  width: 50%
+}
+
+.summery-title{
+   width: 100%
+}
+
+.summery-title h2{
+  background-color: rgb(237, 241, 255);
+  padding: 5px;
+  margin: 5px;
+ text-align: center
+}
+
+
+.summery-price{
+   display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  width: 100%; 
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  margin: 5px
+}
+
+ .summery-btn{
+  transition: all .3s !important;
+  font-weight: bold !important;
+  padding: 0 !important;
+  margin-top: 0 !important
+}
+
+ .summery-btn:hover{
+  color: white !important
+ }
+
+ .coupon-btn{
+  transition: all .3s !important;
+ }
+
+  .coupon-btn:hover{
+    color: white !important
+  }
+
+   .main-card{
+    width: 50%
+   }
+
+@media (max-width: 768px) {
+  .summery-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-card,
+  .summery-text {
+    width: 100%;
+  }
+
+  .summery-text {
+    font-size: 16px;
+  }
+
+  .total span {
+    font-size: 22px;
+  }
+
+  .summery-btn {
+    width: 100%;
+  }
+}
 
 
 
