@@ -6,210 +6,132 @@ import { MdOutlineAddBox } from "react-icons/md";
 export default function Table() {
   return (
     <>
-      <table style={{ width: "40%", padding: "10px", margin: "80px" }}>
-        <thead style={{ backgroundColor: "#rgb 237, 241, 255" }}>
+      <table
+        style={{
+          width: "80%",
+          margin: "80px auto",
+          borderCollapse: "collapse",
+          textAlign: "center",
+        }}
+      >
+        <thead style={{ backgroundColor: "#EDF1FF" }}>
           <tr>
-            <th>Products</th>
-            <th>Price</th>
-            <th>Quantity</th>
-            <th>Total</th>
-            <th>Remove</th>
+            <th style={{ border: "1px solid #ccc", padding: "10px" }}>Products</th>
+            <th style={{ border: "1px solid #ccc", padding: "10px" }}>Price</th>
+            <th style={{ border: "1px solid #ccc", padding: "10px" }}>Quantity</th>
+            <th style={{ border: "1px solid #ccc", padding: "10px" }}>Total</th>
+            <th style={{ border: "1px solid #ccc", padding: "10px" }}>Remove</th>
           </tr>
         </thead>
-        <tbody style={{ width: "50%" }}>
+
+        <tbody>
+          {/* ========== الصف الأول ========== */}
           <tr>
-            <td
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "start",
-                textAlign: "center",
-              }}
-            >
-              <Image
-                className=""
-                src="/images/product-1.jpg"
-                width={100}
-                height={100}
-                priority
-                alt="product-1"
-              />
-              <span>Colorful Stylish Shirt</span>
-            </td>
-            <td>$150</td>
-            <td>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "start",
-                  textAlign: "center",
-                }}
-              >
-                <AiFillPlusSquare style={{}} />
-                <span>1</span>
-                <CiSquareMinus style={{}} />
+            <td style={{ border: "1px solid #ccc", padding: "10px" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+                <Image src="/images/product-1.jpg" width={50} height={50} alt="product-1" />
+                <span>Colorful Stylish Shirt</span>
               </div>
             </td>
-            <td>$150</td>
-            <td style={{ margin: "0 auto" }}>
-              <MdOutlineAddBox />
+            <td style={{ border: "1px solid #ccc", fontWeight: "bold" }}>$150</td>
+            <td style={{ border: "1px solid #ccc" }}>
+              <div className="add-cart" style={{ display: "flex", alignItems: "center", gap: "8px", justifyContent: "center" }}>
+                <AiFillPlusSquare  style={{fontSize: "40px", color: "#D19C97"}}/>
+                <span style={{fontSize: "40px", fontWeight: "bold"}}>1</span>
+                <CiSquareMinus style={{fontSize: "40px", color: "#D19C97"}}/>
+              </div>
+            </td>
+            <td style={{ border: "1px solid #ccc", fontWeight: "bold" }}>$150</td>
+            <td style={{ border: "1px solid #ccc" }}>
+              <MdOutlineAddBox  style={{fontSize: "40px", fontWeight: "bold", margin: "0 auto"}}/>
             </td>
           </tr>
+
+          {/* ========== الصف الثاني ========== */}
           <tr>
-            <td
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "start",
-                textAlign: "center",
-              }}
-            >
-              <Image
-                className=""
-                src="/images/product-2.jpg"
-                width={100}
-                height={100}
-                priority
-                alt="product-2"
-              />
-              <span>Colorful Stylish Shirt</span>
-            </td>
-            <td>$150</td>
-            <td>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "start",
-                  textAlign: "center",
-                }}
-              >
-                <AiFillPlusSquare style={{}} />
-                <span>1</span>
-                <CiSquareMinus style={{}} />
+            <td style={{ border: "1px solid #ccc", padding: "10px" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+                <Image src="/images/product-2.jpg" width={50} height={50} alt="product-2" />
+                <span>Colorful Stylish Shirt</span>
               </div>
             </td>
-            <td>$150</td>
-            <td>
-              <MdOutlineAddBox />
+            <td style={{ border: "1px solid #ccc", fontWeight: "bold" }}>$150</td>
+            <td style={{ border: "1px solid #ccc" }}>
+              <div className="add-cart" style={{ display: "flex", alignItems: "center", gap: "8px", justifyContent: "center" }}>
+                <AiFillPlusSquare style={{fontSize: "40px", color: "#D19C97"}}/>
+                <span style={{fontSize: "40px", fontWeight: "bold"}}>1</span>
+                <CiSquareMinus style={{fontSize: "40px", color: "#D19C97"}}/>
+              </div>
+            </td>
+            <td style={{ border: "1px solid #ccc", fontWeight: "bold" }}>$150</td>
+            <td style={{ border: "1px solid #ccc" }}>
+              <MdOutlineAddBox style={{fontSize: "40px", fontWeight: "bold", margin: "0 auto"}}/>
             </td>
           </tr>
+
+          {/* ========== الصف الثالث (تم تصحيحه) ========== */}
           <tr>
-            <td
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "start",
-                textAlign: "center",
-              }}
-            >
-              <Image
-                className=""
-                src="/images/product-3.jpg"
-                width={100}
-                height={100}
-                priority
-                alt="product-3"
-              />
-              <span>Colorful Stylish Shirt</span>
-            </td>
-            <td>$150</td>
-            <td>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "start",
-                  textAlign: "center",
-                }}
-              >
-                <AiFillPlusSquare style={{}} />
-                <span>1</span>
-                <CiSquareMinus style={{}} />
+            <td style={{ border: "1px solid #ccc", padding: "10px" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+                <Image src="/images/product-3.jpg" width={50} height={50} alt="product-3" />
+                <span>Colorful Stylish Shirt</span>
               </div>
             </td>
-            <td>$150</td>
-            <td>
-              <MdOutlineAddBox />
+            <td style={{ border: "1px solid #ccc", fontWeight: "bold" }}>$150</td>
+            <td style={{ border: "1px solid #ccc" }}>
+              <div className="add-cart" style={{ display: "flex", alignItems: "center", gap: "8px", justifyContent: "center" }}>
+                <AiFillPlusSquare style={{fontSize: "40px", color: "#D19C97"}}/>
+                <span style={{fontSize: "40px", fontWeight: "bold"}}>1</span>
+                <CiSquareMinus style={{fontSize: "40px", color: "#D19C97"}}/>
+              </div>
+            </td>
+            <td style={{ border: "1px solid #ccc", fontWeight: "bold" }}>$150</td>
+            <td style={{ border: "1px solid #ccc" }}>
+              <MdOutlineAddBox  style={{fontSize: "40px", fontWeight: "bold", margin: "0 auto"}}/>
             </td>
           </tr>
+
+          {/* ========== الصف الرابع ========== */}
           <tr>
-            <td
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "start",
-                textAlign: "center",
-              }}
-            >
-              <Image
-                className=""
-                src="/images/product-4.jpg"
-                width={100}
-                height={100}
-                priority
-                alt="product-4"
-              />
-              <span>Colorful Stylish Shirt</span>
-            </td>
-            <td>$150</td>
-            <td>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "start",
-                  textAlign: "center",
-                }}
-              >
-                <AiFillPlusSquare style={{}} />
-                <span>1</span>
-                <CiSquareMinus style={{}} />
+            <td style={{ border: "1px solid #ccc", padding: "10px" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+                <Image src="/images/product-4.jpg" width={50} height={50} alt="product-4" />
+                <span>Colorful Stylish Shirt</span>
               </div>
             </td>
-            <td>$150</td>
-            <td>
-              <MdOutlineAddBox />
+            <td style={{ border: "1px solid #ccc" , fontWeight: "bold"}}>$150</td>
+            <td style={{ border: "1px solid #ccc" }}>
+              <div className="add-cart" style={{ display: "flex", alignItems: "center", gap: "8px", justifyContent: "center" }}>
+                <AiFillPlusSquare style={{fontSize: "40px", color: "#D19C97"}}/>
+                <span style={{fontSize: "40px", fontWeight: "bold"}}>1</span>
+                <CiSquareMinus style={{fontSize: "40px", color: "#D19C97"}}/>
+              </div>
+            </td>
+            <td style={{ border: "1px solid #ccc" , fontWeight: "bold"}}>$150</td>
+            <td style={{ border: "1px solid #ccc" }}>
+              <MdOutlineAddBox  style={{fontSize: "40px", fontWeight: "bold", margin: "0 auto"}}/>
             </td>
           </tr>
+
+          {/* ========== الصف الخامس ========== */}
           <tr>
-            <td
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "start",
-                textAlign: "center",
-              }}
-            >
-              <Image
-                className=""
-                src="/images/product-5.jpg"
-                width={100}
-                height={100}
-                priority
-                alt="product-5"
-              />
-              <span>Colorful Stylish Shirt</span>
-            </td>
-            <td>$150</td>
-            <td>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "start",
-                  textAlign: "center",
-                }}
-              >
-                <AiFillPlusSquare style={{}} />
-                <span>1</span>
-                <CiSquareMinus style={{}} />
+            <td style={{ border: "1px solid #ccc", padding: "10px" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+                <Image src="/images/product-5.jpg" width={50} height={50} alt="product-5" />
+                <span>Colorful Stylish Shirt</span>
               </div>
             </td>
-            <td>$150</td>
-            <td>
-              <MdOutlineAddBox />
+            <td style={{ border: "1px solid #ccc",  fontWeight: "bold" }}>$150</td>
+            <td style={{ border: "1px solid #ccc" }}>
+              <div className="add-cart" style={{ display: "flex", alignItems: "center", gap: "8px", justifyContent: "center" }}>
+                <AiFillPlusSquare style={{fontSize: "40px", color: "#D19C97"}}/>
+                <span style={{fontSize: "40px", fontWeight: "bold"}}>1</span>
+                <CiSquareMinus style={{fontSize: "40px", color: "#D19C97"}}/>
+              </div>
+            </td>
+            <td style={{ border: "1px solid #ccc",  fontWeight: "bold" }}>$150</td>
+            <td style={{ border: "1px solid #ccc" }}>
+              <MdOutlineAddBox  style={{fontSize: "40px", fontWeight: "bold", margin: "0 auto"}}/>
             </td>
           </tr>
         </tbody>
