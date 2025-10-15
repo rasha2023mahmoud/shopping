@@ -4,7 +4,7 @@ import Col from "react-bootstrap/Col";
 import Link from "next/link";
 import Footer from "../components/Footer";
 
-export default function Checkout() {
+export default function CheckOut() {
   return (
     <>
       <Container fluid className="min-vh-90" style={{ marginBottom: "50px" }}>
@@ -35,7 +35,7 @@ export default function Checkout() {
             </Col>
           </Row>
         </Row>
-        
+
         <Footer />
       </Container>
     </>
