@@ -46,12 +46,12 @@ export default function Shop() {
             <Col
               className="first-section"
               md={2}
-              style={{ flex: 1, marginTop: "-282px;" }}
+              style={{ flex: 1, marginTop: "-282px" }}
             >
               <FilterPrice />
             </Col>
             <Col md={10}>
-              <div className="shop-search" style={{ marginTop: "-282px;" }}>
+              <div className="shop-search" style={{ marginTop: "-282px" }}>
                 <SearchRow />
                 <TrendySection dataUrl="/Trend.json" />
               </div>
