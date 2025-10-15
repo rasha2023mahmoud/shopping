@@ -27,7 +27,9 @@ export default function webList() {
             <Dropdown.Item as={Link} href="/ShopCart">
               Shop cart
             </Dropdown.Item>
-            <Dropdown.Item href="#/action-2">Checkout</Dropdown.Item>
+            <Dropdown.Item as={Link} href="/CheckOut">
+              Checkout
+            </Dropdown.Item>
           </DropdownButton>
           <li className="icon">Content</li>
         </ul>
