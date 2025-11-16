@@ -3,7 +3,8 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Link from "next/link";
 import Footer from "../components/Footer";
-
+import BillingAddress from "./BillingAddress";
+import OrderTotal from "./OrderTotal"
 export default function CheckOut() {
   return (
     <>
@@ -35,7 +36,10 @@ export default function CheckOut() {
             </Col>
           </Row>
         </Row>
-
+                <div style={{display: "flex", justifyContent: "center", alignItems:"center", flexDirection:"row", gap:"15px"}}>
+                  <BillingAddress/>
+                  <OrderTotal/>
+                </div>
         <Footer />
       </Container>
     </>
