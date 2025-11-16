@@ -1,64 +1,47 @@
 'use client'
-import Form from 'react-bootstrap/Form';
+import Payment from"./Payment"
 export default function OrderTotal(){
     return(
         <>
-        <div className="orderTotsal-container">
-        <h2>Order Total</h2>
+        <div>
+            <div className="orderTotsal-container" style={{display:"flex", flexDirection:"column", border:"2px solid #EDF1FF"}}>
+        <h2 style={{backgroundColor:"#6c757d54"}}>Order Total</h2>
         <div className="side-info">
             <h4>Products</h4>
-            <div className="stylish">
-                <p>Colorful stylish shirt1</p>
-                <span>150$</span>
+            <div >
+                <p className="stylish" style={{display:"flex", alignItems:"center", justifyContent:"space-between", flexDirection:"row",  gap:"200px", fontWeight:"bold"}}>Colorful stylish shirt 1
+                    <span>150$</span>
+                </p>
             </div>
-            <div className="stylish">
-                <p>Colorful stylish shirt2</p>
-                <span>150$</span>
+            <div >
+                <p className="stylish" style={{display:"flex", alignItems:"center", justifyContent:"space-between", flexDirection:"row",  gap:"200px", fontWeight:"bold"}}>Colorful stylish shirt 2
+                    <span>150$</span>
+                </p>
             </div>
-            <div className="stylish">
-                <p>Colorful stylish shirt3</p>
-                <span>150$</span>
+            <div >
+                <p className="stylish" style={{display:"flex", alignItems:"center", justifyContent:"space-between", flexDirection:"row",  gap:"200px", fontWeight:"bold"}}>Colorful stylish shirt 3
+                    <span>150$</span>
+                </p>
             </div>
         </div>
-        <div className="sub-info">
-            <div className="stylish">
+        <div className="sub-info" style={{borderTop:"2px solid #EDF1FF"}}>
+            <div className="stylish" style={{display:"flex", alignItems:"center", justifyContent:"spaceBetween", flexDirection:"row",  gap:"300px", fontWeight:"bold"}}>
                 <p>Subtotal</p>
                 <span>150$</span>
             </div>
-            <div className="stylish">
+            <div className="stylish" style={{display:"flex", alignItems:"center", justifyContent:"spaceBetween", flexDirection:"row",  gap:"300px", fontWeight:"bold"}}>
                 <p>Shipping</p>
                 <span>10$</span>
             </div>
         </div>
-        <h2>Total</h2>
+        <div style={{display:"flex", alignItems:"center", justifyContent:"space-between", flexDirection:"row",  gap:"300px", fontWeight:"bold", borderTop:"2px solid #EDF1FF"}}>
+            <h2>Total</h2>
+            <span>160$</span>
         </div>
-        <div className="payment">
-        <Form>
-        <Form.Group className="mb-3">
-          <Form.Check
-            required
-            label="Paypal"
-            feedback="You must agree before submitting."
-            feedbackType="invalid"
-          />
-         </Form.Group>
-         <Form.Group className="mb-3">
-          <Form.Check
-            required
-            label="Direct check"
-            feedback="You must agree before submitting."
-            feedbackType="invalid"
-          />
-        </Form.Group>
-         <Form.Group className="mb-3">
-          <Form.Check
-            required
-            label="Bank transfer"
-            feedback="You must agree before submitting."
-            feedbackType="invalid"
-          />
-        </Form.Group>
-        </Form>
+        </div>
+
+        <br />
+        <Payment/>
         </div>
         </>
     )

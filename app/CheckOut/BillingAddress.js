@@ -1,6 +1,5 @@
 'use client';
 import { useState } from 'react';
-import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
@@ -20,8 +19,8 @@ export default function BillingAddress() {
 
   return (
     <>
-      <div className='billing-container' style={{display: "flex", flexDirection: "column"}}>
-        <h3>Billing Address</h3>
+      <div className='billing-container' style={{display: "flex", flexDirection: "column", height: "500px"}}>
+        <h3 style={{paddingBottom:"30px"}}>Billing Address</h3>
       <Form noValidate validated={validated} onSubmit={handleSubmit}>
         <Row className="mb-3">
           <Form.Group as={Col} md="4" controlId="validationCustom01">

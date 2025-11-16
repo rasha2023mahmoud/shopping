@@ -36,10 +36,12 @@ export default function CheckOut() {
             </Col>
           </Row>
         </Row>
-                <div style={{display: "flex", justifyContent: "center", alignItems:"center", flexDirection:"row", gap:"15px"}}>
-                  <BillingAddress/>
+                <Container fluid className="min-vh-90 p-5">
+              <div className="w-100" style={{display: "flex", justifyContent: "space-between", alignItems:"center", flexDirection:"row", gap:"100px", width:"100%"}}>
+                  <BillingAddress style={{padding: "10px"}}/>
                   <OrderTotal/>
                 </div>
+                </Container>
         <Footer />
       </Container>
     </>
