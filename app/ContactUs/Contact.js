@@ -13,7 +13,7 @@ export default function Contacts(){
             <h1>Contact For Any Queries</h1>
         </div>
        <div className='contact-continer'>
-         <div>
+         <div className='text-form'>
          <Form>
       <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
         <Form.Control type="email" placeholder="Your name" />
@@ -33,7 +33,7 @@ export default function Contacts(){
         </div>
         <div className='text-contact'>
             <h3>Get In Touch</h3>
-            <p style={{width: "400px"}}>Justo sed diam ut sed amet duo amet lorem amet stet sea ipsum, sed duo amet et. Est elitr dolor elitr erat sit sit. Dolor diam et erat clita ipsum justo sed.</p>
+            <p style={{width: "500px", fontWeight:"bold"}}>Justo sed diam ut sed amet duo amet lorem amet stet sea ipsum, sed duo amet et. Est elitr dolor elitr erat sit sit. Dolor diam et erat clita ipsum justo sed.</p>
             <h3>Store 1</h3>
                       <div className="location">
                         <CiLocationOn
