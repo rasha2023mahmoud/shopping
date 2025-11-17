@@ -20,7 +20,7 @@ export default function BillingAddress() {
   return (
     <>
       <div className='billing-container' style={{display: "flex", flexDirection: "column", height: "500px"}}>
-        <h3 style={{paddingBottom:"30px"}}>Billing Address</h3>
+        <h3 style={{paddingBottom:"30px", marginBottom:"30px"}}>Billing Address</h3>
       <Form noValidate validated={validated} onSubmit={handleSubmit}>
         <Row className="mb-3">
           <Form.Group as={Col} md="4" controlId="validationCustom01">
